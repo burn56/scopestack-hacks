@@ -7,6 +7,14 @@ Chrome extension that adds shortcut buttons on ScopeStack questionnaire edit pag
 - Adds **Add New** button on calculation edit pages
 - Adds **Add New Recommendation** button on recommendation edit pages
 
+## Screenshots
+
+### Add New Button (Calculations)
+![Add New Button](./screenshots/add-new.png)
+
+### Add New Recommendation Button
+![Add New Recommendation](./screenshots/add-recommendation.png)
+
 ## Supported URLs
 
 - `https://app.scopestack.io/admin/questionnaires/*/calculations/*/edit`
