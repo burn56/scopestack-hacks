@@ -1,4 +1,4 @@
-# ScopeStack Add New Button
+# ScopeStack Quality of Life Buttons
 
 Chrome extension that adds shortcut buttons on ScopeStack questionnaire edit pages.
 
