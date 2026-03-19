@@ -4,6 +4,7 @@ Chrome extension that adds shortcut buttons on ScopeStack questionnaire edit pag
 
 ## Features
 
+- Adds **Add Select $0 Item Button & Clear Selection Button** button on product pages
 - Adds **Add New** button on calculation edit pages
 - Adds **Add New Recommendation** button on recommendation edit pages
 
