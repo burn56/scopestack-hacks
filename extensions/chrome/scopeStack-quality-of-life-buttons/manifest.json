@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "ScopeStack Quality of Life Buttons",
-  "version": "1.1",
-  "description": "Adds Add New buttons to ScopeStack pages. Developed by Matt Urbano (https://github.com/burn56)",
+  "version": "1.4",
+  "description": "Adds Add New buttons to ScopeStack pages. Developed by Matt Urbano (https://github.com/burn56/scopestack-hacks/tree/main/extensions/chrome/scopeStack-quality-of-life-buttons)",
   "icons": {
   "16": "icon16.png",
   "32": "icon32.png",
