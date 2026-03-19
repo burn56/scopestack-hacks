@@ -22,6 +22,8 @@ Chrome extension that adds shortcut buttons on ScopeStack questionnaire edit pag
 
 - `https://app.scopestack.io/admin/questionnaires/*/calculations/*/edit`
 - `https://app.scopestack.io/admin/questionnaires/*/recommendations/*/edit`
+- `https://app.scopestack.io/projects/*/project_materials"`
+- `https://app.scopestack.io/*/projects/*/project_materials`
 
 ## Install
 
