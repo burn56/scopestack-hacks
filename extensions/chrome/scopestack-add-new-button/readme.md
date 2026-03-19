@@ -28,6 +28,9 @@ Chrome extension that adds shortcut buttons on ScopeStack questionnaire edit pag
 4. Click **Load unpacked**
 5. Select this folder
 
+### Extension Installed
+![ScopeStack Quality of Life Buttons](./screenshots/chrome-extension.png)
+
 ## Developed By
 
 Matt Urbano  
