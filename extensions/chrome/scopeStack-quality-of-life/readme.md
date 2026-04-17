@@ -1,14 +1,18 @@
-# ScopeStack Quality of Life Buttons
+# ScopeStack Quality of Life
 
 Chrome extension that adds shortcut buttons on ScopeStack questionnaire edit pages.
 
 ## Features
 
+- Automatically Expands Customer Summaries instead of allowing them to start condensed.
 - Adds **Add Select $0 Item Button & Clear Selection Button** button on product pages
 - Adds **Add New** button on calculation edit pages
 - Adds **Add New Recommendation** button on recommendation edit pages
 
 ## Screenshots
+
+### Auto-Expands Customer Summaries
+![Add New Button](./screenshots/expand-summaries.gif)
 
 ### Add New Button (Calculations)
 ![Add New Button](./screenshots/add-new.png)
@@ -25,6 +29,7 @@ Chrome extension that adds shortcut buttons on ScopeStack questionnaire edit pag
 - `https://app.scopestack.io/admin/questionnaires/*/recommendations/*/edit`
 - `https://app.scopestack.io/projects/*/project_materials"`
 - `https://app.scopestack.io/*/projects/*/project_materials`
+- `https://app.scopestack.io/projects/*/sow_outcome/edit`
 
 ## Install
 
