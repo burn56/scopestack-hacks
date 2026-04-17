@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "ScopeStack Quality of Life Buttons",
-  "version": "1.5",
-  "description": "Adds Add New buttons to ScopeStack pages and product selection tools. Developed by Matt Urbano (https://github.com/burn56/scopestack-hacks/tree/main/extensions/chrome/scopeStack-quality-of-life-buttons)",
+  "name": "ScopeStack Quality of Life ",
+  "version": "1.7",
+  "description": "Adds some quality of life to Scopestack",
   "icons": {
     "16": "icon16.png",
     "32": "icon32.png",
@@ -17,7 +17,8 @@
 		  "https://app.scopestack.io/projects/*",
 		  "https://app.scopestack.io/*/projects/*",
 		  "https://app.scopestack.io/projects/*/project_materials",
-		  "https://app.scopestack.io/*/projects/*/project_materials"
+		  "https://app.scopestack.io/*/projects/*/project_materials",
+		  "https://app.scopestack.io/projects/*/sow_outcome/edit"
 		],
       "js": ["content.js"],
       "run_at": "document_idle"

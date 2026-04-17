@@ -368,8 +368,64 @@
             subtree: true
         });
     }
-
     //////////////////////////////
+    // SOW Outcome Auto Expand Block //
+    //////////////////////////////
+
+    const sowOutcomePattern = /^https:\/\/app\.scopestack\.io\/projects\/\d+\/sow_outcome\/edit(?:\/)?$/;
+    const sowOutcomeMatch = window.location.href.match(sowOutcomePattern);
+
+    function getParagraphTotalHeight(contentEditableDiv) {
+        const paragraphs = Array.from(contentEditableDiv.querySelectorAll("p"));
+
+        if (!paragraphs.length) {
+            return Math.ceil(contentEditableDiv.getBoundingClientRect().height || 0);
+        }
+
+        let total = 0;
+
+        paragraphs.forEach((p) => {
+            total += p.getBoundingClientRect().height;
+        });
+
+        return Math.ceil(total);
+    }
+
+    function processSowOutcomeEditors() {
+		
+        if (!sowOutcomeMatch) {
+            return false;
+        }
+
+        const editors = Array.from(document.querySelectorAll(".mdtav2.mdtav2-editing"));
+
+        if (!editors.length) {
+            return false;
+        }
+
+        editors.forEach((editor) => {
+            const toolbar = editor.querySelector(".mdtav2-toolbar");
+            const content = editor.querySelector(".mdtav2-content");
+            const contentEditableDiv = content ? content.querySelector('div[contenteditable="true"]') : null;
+
+            if (!content || !contentEditableDiv) {
+                return;
+            }
+
+            const toolbarHeight = toolbar ? toolbar.getBoundingClientRect().height : 0;
+            const paragraphHeight = getParagraphTotalHeight(contentEditableDiv);
+            const buffer = 50;
+            const suggestedHeight = Math.ceil(toolbarHeight + paragraphHeight + buffer);
+
+            editor.style.height = `${suggestedHeight}px`;
+        });
+
+        return true;
+    }
+    
+	
+	
+	//////////////////////////////
     // Init / Retry Block //
     //////////////////////////////
 
@@ -383,6 +439,7 @@
         if (document.body) {
             injectProductStyles();
             createProductButtons();
+            processSowOutcomeEditors();
         }
 
         attempts++;
